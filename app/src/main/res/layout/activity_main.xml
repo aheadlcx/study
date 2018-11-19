@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sample_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txtShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtPack"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#5fb720"
+                android:gravity="center"
+                android:text="包名"
+                android:textColor="#111"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtPackError"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#5fb720"
+                android:gravity="center"
+                android:text="包名 error"
+                android:textColor="#111"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtSign"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#5fb720"
+                android:gravity="center"
+                android:text="签名"
+                android:textColor="#111"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/txtMD5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="#5fb720"
+                android:gravity="center"
+                android:text="MD5"
+                android:textColor="#111"/>
+
+            <TextView
+                android:id="@+id/txtMD5Show"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="#5fb720"
+                android:gravity="center"
+                android:text="value"
+                android:textColor="#111"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="退出"
+                    android:id="@+id/txtExit"
+                    android:background="#ded491"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txtShowHello"
+                    android:text="showHello"
+                    android:background="#ded491"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txtCheckIsDebug"
+                    android:text="检查是否 debug"
+                    android:background="#ded491"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="单次 检测 是否 调试"
+                    android:id="@+id/txtCheckDebugOnce"
+                    android:background="#ded491"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
