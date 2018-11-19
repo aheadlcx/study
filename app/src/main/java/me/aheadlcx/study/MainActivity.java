@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.security.NoSuchAlgorithmException;
 
 import me.aheadlcx.study.ndk.ContextImpl;
+import me.aheadlcx.study.ndk.Methodmanager;
 import me.aheadlcx.study.ndk.People;
 
 public class MainActivity extends Activity {
@@ -97,6 +98,22 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 People.checkIsDebugOnce();
+            }
+        });
+
+        findViewById(R.id.txtNativeReg).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String stringFromC = Methodmanager.getStringFromC();
+                Log.i(TAG, "onClick: stringFromC = " + stringFromC);
+            }
+        });
+
+        findViewById(R.id.txtMyName).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String myName = Methodmanager.getMyName();
+                Log.i(TAG, "onClick: myName = " + myName);
             }
         });
     }

@@ -34,7 +34,7 @@
             <TextView
                 android:id="@+id/txtPack"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:background="#5fb720"
                 android:gravity="center"
                 android:text="包名"
@@ -44,7 +44,7 @@
             <TextView
                 android:id="@+id/txtPackError"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:background="#5fb720"
                 android:gravity="center"
                 android:text="包名 error"
@@ -54,7 +54,7 @@
             <TextView
                 android:id="@+id/txtSign"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:background="#5fb720"
                 android:gravity="center"
                 android:text="签名"
@@ -64,18 +64,18 @@
             <TextView
                 android:id="@+id/txtMD5"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="5dp"
-                android:visibility="gone"
                 android:background="#5fb720"
                 android:gravity="center"
                 android:text="MD5"
-                android:textColor="#111"/>
+                android:textColor="#111"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/txtMD5Show"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:background="#5fb720"
                 android:gravity="center"
@@ -84,51 +84,77 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/txtExit"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="退出"
-                    android:id="@+id/txtExit"
                     android:background="#ded491"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="退出"/>
 
                 <TextView
+                    android:id="@+id/txtShowHello"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:id="@+id/txtShowHello"
-                    android:text="showHello"
                     android:background="#ded491"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="showHello"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/txtCheckIsDebug"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:id="@+id/txtCheckIsDebug"
-                    android:text="检查是否 debug"
                     android:background="#ded491"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="检查是否 debug"/>
 
                 <TextView
+                    android:id="@+id/txtCheckDebugOnce"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="单次 检测 是否 调试"
-                    android:id="@+id/txtCheckDebugOnce"
                     android:background="#ded491"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="单次 检测 是否 调试"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="#ded491"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNativeReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="动态注册"/>
+
+
+                <TextView
+                    android:id="@+id/txtMyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="名字"/>
 
             </LinearLayout>
 
